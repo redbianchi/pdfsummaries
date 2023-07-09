@@ -3,13 +3,15 @@
 FROM node:18
 
 # Set the working directory in the container
-WORKDIR .
+WORKDIR /app
 
 # Copy the application files into the working directory
-COPY COPY package*.json ./
+COPY COPY . /app
+# package*.json ./
 
 # Install the application dependencies
-RUN npm install express axios multer pdf-parse fs path
+RUN npm install 
+# express axios multer pdf-parse fs path
 
 # Define the entry point for the container
 CMD ["node", "index.js"]

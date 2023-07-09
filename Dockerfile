@@ -10,6 +10,6 @@ COPY COPY package*.json ./
 
 # Install the application dependencies
 RUN npm install express axios multer pdf-parse fs path
-gi
+
 # Define the entry point for the container
 CMD ["node", "index.js"]

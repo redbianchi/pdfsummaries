@@ -13,3 +13,6 @@ RUN npm install express axios multer pdf-parse fs path
 
 # Define the entry point for the container
 CMD ["node", "index.js"]
+
+# Expose the port
+EXPOSE 3000

@@ -3,7 +3,7 @@
 FROM node:18
 
 # Set the working directory in the container
-WORKDIR /my-express-server
+WORKDIR /Users/chrischaput/Desktop/my-express-server/
 
 # Copy the application files into the working directory
 COPY COPY package*.json ./
